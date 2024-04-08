@@ -1,10 +1,9 @@
-//import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
 	return (
 		<div>
-			<p>Bienvenido a mi aplicación con React y Tailwind</p>
+			<p className="text-blue-800">Bienvenido a mi aplicación con React y Tailwind</p>
 		</div>
 	);
 }
