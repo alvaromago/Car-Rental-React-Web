@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    font-family: "PT Sans", sans-serif;
+    color-scheme: dark;
+}
+
+p {
+    font-weight: 700;
+}
