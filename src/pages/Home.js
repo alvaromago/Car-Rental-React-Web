@@ -27,11 +27,11 @@ function Home() {
 						<span className="text-xl text-slate-50/80">¡Reserva ahora y prepárate para explorar nuevos horizontes con nosotros!</span>
 					</p>
 				</div>
-				<div className="bg-white mx-auto rounded-md container">
+				<div className="mx-auto rounded-md container">
 					<form>
 						<div className="py-3">
 							<div className="mx-5 justify-center">
-								<div className="flex p-1 border-4 rounded-md border-violet-500">
+								<div className="bg-white flex p-1 border-4 rounded-md border-violet-500">
 									<div className="flex py-4 pr-1 mr-3 items-center">
 										<Search className="text-black" />
 									</div>
