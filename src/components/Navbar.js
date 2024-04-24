@@ -1,10 +1,10 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import "../index.css";
 import logo from "../logo.png";
 
 const Navbar = () => {
-	const { menuNavMovil, setMenuNavMovil } = useState(false);
+	const [menuNavMovil, setMenuNavMovil] = useState(false);
 
 	const toggleNavbar = () => {
 		setMenuNavMovil(!menuNavMovil);
@@ -34,6 +34,24 @@ const Navbar = () => {
 						<button onClick={toggleNavbar}>{menuNavMovil ? <X /> : <Menu />}</button>
 					</div>
 				</div>
+				{menuNavMovil && (
+					<div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 md:hidden border-b-2 border-green-500">
+						<ul className="flex flex-col justify-around items-center">
+							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
+								<a href="/carlist">Coches</a>
+								<ArrowRight className="hidden group-hover:flex relative ml-24" />
+							</li>
+							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
+								<a href="/contacto">Contacto</a>
+								<ArrowRight className="hidden group-hover:flex relative ml-24" />
+							</li>
+							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
+								<a href="/about">Sobre nosotros</a>
+								<ArrowRight className="hidden group-hover:flex relative ml-24" />
+							</li>
+						</ul>
+					</div>
+				)}
 			</div>
 		</nav>
 	);
