@@ -1,7 +1,7 @@
 import { Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import "../index.css";
-import logo from "../logo.png";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
 	const [menuNavMovil, setMenuNavMovil] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
 				<div className="flex md:justify-center justify-between items-center">
 					<div className="flex items-center flex-shrink-0">
 						<a href="/">
-							<img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
+							<img className="h-10 w-10 mr-2" src={logo} alt="CarRentalHub" />
 						</a>
 					</div>
 					<ul className="hidden md:flex ml-14 space-x-12">
