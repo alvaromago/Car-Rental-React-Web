@@ -1,5 +1,6 @@
 import { Menu, X, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../index.css";
 import logo from "../assets/logo.png";
 
@@ -21,13 +22,13 @@ const Navbar = () => {
 					</div>
 					<ul className="hidden md:flex ml-14 space-x-12">
 						<li className=" hover:text-green-500">
-							<a href="/carlist">Coches</a>
+							<Link to="/carlist">Coches</Link>
 						</li>
 						<li className=" hover:text-green-500">
-							<a href="/contacto">Contacto</a>
+							<Link to="/contact">Contacto</Link>
 						</li>
 						<li className=" hover:text-green-500">
-							<a href="/about">Sobre nosotros</a>
+							<Link to="/about">Sobre nosotros</Link>
 						</li>
 					</ul>
 					<div className="md:hidden sm:flex flex-col justify-end">
@@ -38,15 +39,15 @@ const Navbar = () => {
 					<div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 md:hidden border-b-2 border-green-500">
 						<ul className="flex flex-col justify-around items-center">
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
-								<a href="/carlist">Coches</a>
+								<Link to="/carlist">Coches</Link>
 								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
-								<a href="/contacto">Contacto</a>
+								<Link to="/contact">Contacto</Link>
 								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
-								<a href="/about">Sobre nosotros</a>
+								<Link to="/about">Sobre nosotros</Link>
 								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 						</ul>

@@ -1,5 +1,6 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Search } from "lucide-react";
 import Skoda from "../assets/skoda.png";
 import BMW from "../assets/bmw.png";
@@ -58,10 +59,10 @@ function Home() {
 							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={Mercedes} alt="Mercedes Benz" />
 						</div>
 						<div>
-							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={Peugeot} alt="Peugeot" />
+							<img className="w-10 h-12 md:w-12 md:h-14 mx-3" src={Tesla} alt="Tesla" />
 						</div>
 						<div>
-							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={BMW} alt="BMW" />
+							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={Peugeot} alt="Peugeot" />
 						</div>
 						<div>
 							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={VW} alt="VolksWagen" />
@@ -70,14 +71,12 @@ function Home() {
 							<img className="w-12 h-10 md:w-16 lg:h-12 mx-3" src={Skoda} alt="Skoda" />
 						</div>
 						<div>
-							<img className="w-10 h-12 md:w-12 md:h-14 mx-3" src={Tesla} alt="Tesla" />
+							<img className="w-10 h-10 md:w-14 md:h-14 mx-3" src={BMW} alt="BMW" />
 						</div>
 					</div>
 				</div>
 			</div>
-			{
-				// Footer
-			}
+			<Footer />
 		</div>
 	);
 }
