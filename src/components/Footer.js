@@ -17,7 +17,7 @@ export const Footer = () => {
 			</div>
 			<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
 				<div>
-					<h3 className="mb-4 text-violet-500 font-semibold text-2xl">Titulo 1</h3>
+					<h3 className="mb-4 text-purple-400 font-semibold text-2xl">Titulo 1</h3>
 					<ul className="space-y-2">
 						<li className="hover:text-green-500 cursor-pointer">Opción 1</li>
 						<li className="hover:text-green-500 cursor-pointer">Opción 2</li>
@@ -25,7 +25,7 @@ export const Footer = () => {
 					</ul>
 				</div>
 				<div>
-					<h3 className="mb-4 text-violet-500 font-semibold text-2xl">Titulo 2</h3>
+					<h3 className="mb-4 text-purple-400 font-semibold text-2xl">Titulo 2</h3>
 					<ul className="space-y-2">
 						<li className="hover:text-green-500 cursor-pointer">Opción 1</li>
 						<li className="hover:text-green-500 cursor-pointer">Opción 2</li>
@@ -33,7 +33,7 @@ export const Footer = () => {
 					</ul>
 				</div>
 				<div>
-					<h3 className="mb-4 text-violet-500 font-semibold text-2xl">Titulo 3</h3>
+					<h3 className="mb-4 text-purple-400 font-semibold text-2xl">Titulo 3</h3>
 					<ul className="space-y-2">
 						<li className="hover:text-green-500 cursor-pointer">Opción 1</li>
 						<li className="hover:text-green-500 cursor-pointer">Opción 2</li>

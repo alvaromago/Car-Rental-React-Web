@@ -8,7 +8,7 @@ function Contact() {
 		<div>
 			<Navbar />
 			<div className="mx-3">
-				<h1 className="text-center text-transparent bg-clip-text pt-5 lg:pt-16 pb-8 font-extrabold text-5xl lg:text-7xl bg-gradient-to-r from-green-500 to-violet-400">
+				<h1 className="text-center text-transparent bg-clip-text pt-5 lg:pt-16 pb-8 font-extrabold text-5xl lg:text-7xl bg-gradient-to-r from-green-500 to-purple-300">
 					Habla con nosotros.
 					<br />
 					Fácil y sencillo.
@@ -20,16 +20,16 @@ function Contact() {
 								<input
 									type="text"
 									placeholder="Nombre"
-									className="border-b-2 mr-5 lg:mr-10 w-full mb-10 hover:border-b-violet-500"
+									className="border-b-2 mr-5 lg:mr-10 w-full mb-10 hover:border-b-purple-400"
 									required
 								/>
-								<input type="text" placeholder="Apellidos" className="border-b-2 w-full mb-10 hover:border-b-violet-500" />
+								<input type="text" placeholder="Apellidos" className="border-b-2 w-full mb-10 hover:border-b-purple-400" />
 							</div>
 							<div>
 								<input
 									type="email"
 									placeholder="Correo electrónico"
-									className="border-b-2 mb-10 w-full hover:border-b-violet-500"
+									className="border-b-2 mb-10 w-full hover:border-b-purple-400"
 									required
 								/>
 							</div>
@@ -37,7 +37,7 @@ function Contact() {
 								<textarea
 									type="text"
 									placeholder="Escribe tu mensaje"
-									className="resize-none w-full border-b-2 mb-5 hover:border-b-violet-500"
+									className="resize-none w-full border-b-2 mb-5 hover:border-b-purple-400"
 									required
 								/>
 							</div>
