@@ -1,4 +1,4 @@
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
@@ -40,15 +40,12 @@ const Navbar = () => {
 						<ul className="flex flex-col justify-around items-center">
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/carlist">Coches</Link>
-								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/contact">Contacto</Link>
-								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/about">Sobre nosotros</Link>
-								<ArrowRight className="hidden group-hover:flex relative ml-24" />
 							</li>
 						</ul>
 					</div>
