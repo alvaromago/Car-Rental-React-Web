@@ -94,18 +94,38 @@ function Home() {
 					</div>
 					<div className="">
 						<p className="text-2xl mt-5 mb-5">Todos los coches a tu alcance</p>
-						<p className="flex opacity-50 mb-3">
+						<p className="flex opacity-70 mb-3">
 							<ArrowRight className="mr-2" />
 							Desde 33€ al día
 						</p>
-						<p className="flex opacity-50">
+						<p className="flex opacity-70">
 							<ArrowRight className="mr-2" />
-							<span className="mr-1">Al menos</span>
+							<span className="mr-2">Al menos</span>
 							<Star />
 							<Star />
 							<Star />
 							<StarHalf />
 						</p>
+					</div>
+				</div>
+				<div className="mt-3">
+					<h3 className="text-4xl font-semibold text-purple-400">Filtros más utilizados:</h3>
+					<div className="mt-4">
+						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+							Familiares
+						</button>
+						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+							SUV
+						</button>
+						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+							Lujo
+						</button>
+						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+							Descapotable
+						</button>
+						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+							2 plazas
+						</button>
 					</div>
 				</div>
 			</div>
