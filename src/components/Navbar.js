@@ -36,7 +36,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				{menuNavMovil && (
-					<div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 md:hidden border-b-2 border-green-500">
+					<div className="fixed right-0 z-20 bg-gray-900 w-full p-12 md:hidden border-b-2 border-green-500">
 						<ul className="flex flex-col justify-around items-center">
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/carlist">Coches</Link>
