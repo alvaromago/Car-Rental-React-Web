@@ -15,7 +15,7 @@ function Home() {
 	return (
 		<div>
 			<Navbar />
-			<div className="text-center">
+			<div className="text-center bg-bg">
 				<div>
 					<h1 className="text-transparent bg-clip-text pt-5 lg:pt-16 pb-8 font-extrabold text-5xl lg:text-8xl bg-gradient-to-r from-green-500 to-purple-300">
 						Tu viaje comienza aquí
@@ -110,7 +110,7 @@ function Home() {
 						</p>
 					</div>
 				</div>
-				<div className="mt-3">
+				<div className="mt-3 pb-6">
 					<h3 className="text-4xl font-semibold text-purple-400">Filtros más utilizados:</h3>
 					<div className="mt-4">
 						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">

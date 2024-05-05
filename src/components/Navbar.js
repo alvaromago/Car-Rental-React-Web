@@ -12,7 +12,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="top-0 z-50 py-3 backdrop-blur-lg border-b-2 border-green-500">
+		<nav className="top-0 z-50 py-3 backdrop-blur-lg border-b-2 border-green-500 bg-black">
 			<div className="container px-4 mx-auto relative text-md">
 				<div className="flex md:justify-center justify-between items-center">
 					<div className="flex items-center flex-shrink-0">
@@ -36,7 +36,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				{menuNavMovil && (
-					<div className="fixed right-0 z-20 bg-gray-900 w-full p-12 md:hidden border-b-2 border-green-500">
+					<div className="fixed right-0 z-20 bg-black w-full p-12 md:hidden border-b-2 border-green-500">
 						<ul className="flex flex-col justify-around items-center">
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/carlist">Coches</Link>
