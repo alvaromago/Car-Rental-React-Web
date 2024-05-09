@@ -30,6 +30,9 @@ const Navbar = () => {
 						<li className=" hover:text-green-500">
 							<Link to="/about">Sobre nosotros</Link>
 						</li>
+						<li className=" hover:text-green-500">
+							<Link to="/reviews">Valoraciones</Link>
+						</li>
 					</ul>
 					<div className="md:hidden sm:flex flex-col justify-end">
 						<button onClick={toggleNavbar}>{menuNavMovil ? <X /> : <Menu />}</button>
@@ -46,6 +49,9 @@ const Navbar = () => {
 							</li>
 							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
 								<Link to="/about">Sobre nosotros</Link>
+							</li>
+							<li className="group flex hover:text-green-500 py-3 hover:text-xl text-lg font-semibold">
+								<Link to="/reviews">Valoraciones</Link>
 							</li>
 						</ul>
 					</div>

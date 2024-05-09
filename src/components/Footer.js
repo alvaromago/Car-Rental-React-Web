@@ -22,7 +22,7 @@ export const Footer = () => {
 					<FaRegCompass className="h-10 w-10 mb-3" />
 					<p>Ctra. Su Eminencia, 4, 41006 Sevilla</p>
 				</div>
-				<div className="grid shadow-md md:shadow-2xl md:shadow-purple-400/30 md:p-7 place-items-center mx-8 md:mx-5 md:bg-blue-gray-900/30 rounded-xl">
+				<div className="grid shadow-md md:shadow-2xl md:shadow-purple-400/30 md:p-5 place-items-center mx-8 md:mx-5 md:bg-blue-gray-900/30 rounded-xl">
 					<Link to="/" className="text-lg  font-semibold hover:text-green-500">
 						Inicio
 					</Link>
@@ -34,6 +34,9 @@ export const Footer = () => {
 					</Link>
 					<Link to="/about" className="text-lg font-semibold hover:text-green-500">
 						Sobre nosotros
+					</Link>
+					<Link to="/reviews" className="text-lg font-semibold hover:text-green-500">
+						Valoraciones
 					</Link>
 				</div>
 			</div>
