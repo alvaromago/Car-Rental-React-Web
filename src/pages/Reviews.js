@@ -8,23 +8,23 @@ function Reviews() {
 		<div>
 			<Navbar />
 			<div className="bg-bg">
-				<div className="px-7 md:px-20 lg:px-64 py-8">
-					<div className="bg-white/90 p-3 md:p-6 text-black rounded-xl">
+				<div className="px-7 md:px-20 2xl:px-72 px py-8">
+					<div className="p-3 md:p-6 rounded-xl">
 						<div className="text-center mb-10">
 							<p className="text-sm opacity-75">Revisa las valoraciones</p>
-							<p className="text-transparent bg-clip-text pb-5 font-extrabold text-5xl lg:text-8xl bg-gradient-to-r from-green-500 to-purple-300">
+							<p className="text-transparent bg-clip-text pb-5 font-extrabold text-6xl lg:text-8xl bg-gradient-to-r from-green-500 to-purple-300">
 								¿Qué dicen nuestros clientes?
 							</p>
-							<p className="px-10 xl:px-20 2xl:px-40">
+							<p className="px-8 xl:px-20 2xl:px-36">
 								Aquí encontrarás las valoraciones de nuestros clientes ordenadas de más reciente a más antigua. Puedes ver en tiempo
 								real las opiniones de los últimos servicios contratados junto a las estrellas del mismo.
 							</p>
 						</div>
 						<div className="space-y-4">
-							<div className="bg-white/70 rounded-xl p-3">
+							<div className="bg-white/30 rounded-xl p-3">
 								<div className="flex justify-between">
 									<div className="flex items-center mb-1">
-										<div className="flex items-center opacity-55 md:mr-5">
+										<div className="flex items-center opacity-80 md:mr-5">
 											<CircleUserRound />
 											<p className="text-left ml-2 text-lg">Andre</p>
 										</div>
@@ -43,10 +43,10 @@ function Reviews() {
 									pesar de eso, recomendaría este servicio.
 								</p>
 							</div>
-							<div className="bg-white/70 rounded-xl p-3">
+							<div className="bg-white/30 rounded-xl p-3">
 								<div className="flex justify-between">
 									<div className="flex items-center mb-1">
-										<div className="flex items-center opacity-55 md:mr-5">
+										<div className="flex items-center opacity-80 md:mr-5">
 											<CircleUserRound />
 											<p className="text-left ml-2 text-lg">Soler</p>
 										</div>
@@ -66,12 +66,12 @@ function Reviews() {
 									este servicio.
 								</p>
 							</div>
-							<div className="bg-white/70 rounded-xl p-3">
+							<div className="bg-white/30 rounded-xl p-3">
 								<div className="flex justify-between">
 									<div className="flex items-center mb-1">
-										<div className="flex items-center opacity-55 md:mr-5">
+										<div className="flex items-center opacity-80 md:mr-5">
 											<CircleUserRound />
-											<p className="text-left ml-2 text-lg">Logan</p>
+											<p className="text-left ml-2 text-lg">Gwyn</p>
 										</div>
 										<p className=" bg-red-400 p-1 rounded-lg hidden md:flex text-xs">No Recomendado</p>
 									</div>
@@ -86,10 +86,10 @@ function Reviews() {
 									No recomendaría este servicio.
 								</p>
 							</div>
-							<div className="bg-white/70 rounded-xl p-3">
+							<div className="bg-white/30 rounded-xl p-3">
 								<div className="flex justify-between">
 									<div className="flex items-center mb-1">
-										<div className="flex items-center opacity-55 md:mr-5">
+										<div className="flex items-center opacity-80 md:mr-5">
 											<CircleUserRound />
 											<p className="text-left ml-2 text-lg">Malenia</p>
 										</div>
@@ -110,10 +110,10 @@ function Reviews() {
 									Recomiendo encarecidamente este servicio sin dudarlo.
 								</p>
 							</div>
-							<div className="bg-white/70 rounded-xl p-3">
+							<div className="bg-white/30 rounded-xl p-3">
 								<div className="flex justify-between">
 									<div className="flex items-center mb-1">
-										<div className="flex items-center opacity-55 md:mr-5">
+										<div className="flex items-center opacity-80 md:mr-5">
 											<CircleUserRound />
 											<p className="text-left ml-2 text-lg">Lothric</p>
 										</div>

@@ -123,12 +123,6 @@ function Home() {
 						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
 							Lujo
 						</button>
-						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
-							Descapotable
-						</button>
-						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
-							2 plazas
-						</button>
 					</div>
 				</div>
 			</div>
