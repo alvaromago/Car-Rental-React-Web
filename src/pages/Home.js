@@ -1,10 +1,19 @@
-// import data from "../json/car.json";
 import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Search, Star, StarHalf, ArrowRight } from "lucide-react";
 import { Carousel } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 import TeslaCaru from "../assets/tesla-model-x-plaid-grey.jpg";
+import BMWCaru from "../assets/bmw-serie-4-coupe.jpg";
+import MercedesCaru from "../assets/mercedes-gle-coupe.jpg";
+import SkodaCaru from "../assets/skoda-superb-combi.jpg";
+import OpelCaru from "../assets/opel-mokka.jpg";
+import ToyotaCaru from "../assets/toyota-corolla.png";
+import SeatCaru from "../assets/seat-tarraco.jpg";
+import AudiCaru from "../assets/audi-a7.png";
+import VWCaru from "../assets/VWCaru.png";
+import PeugeotCaru from "../assets/peugeot-2008.jpg";
 import Skoda from "../assets/skoda.png";
 import BMW from "../assets/bmw.png";
 import Tesla from "../assets/tesla.png";
@@ -22,13 +31,15 @@ function Home() {
 						Tu viaje comienza aquí
 					</h1>
 					<div className="pb-10 mx-5 lg:mx-60 text-balance">
-						<p className="text-slate-50/70">
-							En <span className="text-purple-400 text-xl">CarRentalHub</span> nos dedicamos a hacer que tu experiencia de alquiler de
+						<p className="text-slate-50/70 text-xl">
+							En <span className="text-purple-400 text-2xl">CarRentalHub</span> nos dedicamos a hacer que tu experiencia de alquiler de
 							coches sea rápida, fácil y sin complicaciones. Tarifas transparentes, atención al cliente excepcional y una variedad de
 							servicios adicionales.
 							<br />
 							<br />
-							<span className="text-xl text-slate-50/80">¡Reserva ahora y prepárate para explorar nuevos horizontes con nosotros!</span>
+							<span className="text-2xl text-slate-50/80">
+								¡Reserva ahora y prepárate para explorar nuevos horizontes con nosotros!
+							</span>
 						</p>
 					</div>
 					<div className="mx-auto rounded-md container">
@@ -51,7 +62,10 @@ function Home() {
 								</div>
 							</div>
 							<div className="py-3">
-								<button type="submit" className="bg-green-700 font-semibold py-3 px-10 rounded-xl">
+								<button
+									type="submit"
+									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
+								>
 									Mostrar resultados
 								</button>
 							</div>
@@ -81,21 +95,21 @@ function Home() {
 					</div>
 				</div>
 				<div className="py-10 mx-3 md:mx-20 xl:mx-0 xl:flex justify-center">
-					<div className="lg:mx-16 xl:ml-0 xl:mr-15">
+					<div className="lg:mx-12 xl:ml-0 xl:mr-15">
 						<Carousel className="rounded-xl w-fit xl:w-[750px] h-fit xl:h-[475px]" autoplay="true">
 							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
-							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={PeugeotCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={BMWCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={VWCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={SkodaCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={MercedesCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={OpelCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={SeatCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={ToyotaCaru} alt="Tesla" className="h-full w-full object-cover" />
+							<img src={AudiCaru} alt="Tesla" className="h-full w-full object-cover" />
 						</Carousel>
 					</div>
-					<div className="">
+					<div>
 						<p className="text-2xl mt-5 mb-5">Todos los coches a tu alcance</p>
 						<p className="flex opacity-70 mb-3">
 							<ArrowRight className="mr-2" />
@@ -109,20 +123,21 @@ function Home() {
 							<Star />
 							<StarHalf />
 						</p>
-					</div>
-				</div>
-				<div className="mt-3 pb-6">
-					<h3 className="text-4xl font-semibold text-purple-400">Filtros más utilizados:</h3>
-					<div className="mt-4">
-						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
-							Familiares
-						</button>
-						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
-							SUV
-						</button>
-						<button type="submit" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
-							Lujo
-						</button>
+						<p className="mt-7 p-5 mb-8 text-xl opacity-75">
+							En nuestra página con el listado
+							<br />
+							completo de coches podrás
+							<br />
+							acceder a filtros para hacer
+							<br />
+							tu búsqueda más rápida y eficaz.
+						</p>
+						<Link
+							to="/carlist"
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
+						>
+							Lista completa
+						</Link>
 					</div>
 				</div>
 			</div>

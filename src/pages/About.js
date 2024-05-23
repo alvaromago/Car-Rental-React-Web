@@ -37,10 +37,16 @@ function About() {
 								nuestros clientes confían en nosotros para proporcionarles la solución de movilidad perfecta.
 							</p>
 							<div className="flex justify-center items-center mt-5">
-								<Link to="/reviews" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+								<Link
+									to="/reviews"
+									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl mr-5"
+								>
 									Valoraciones
 								</Link>
-								<Link to="/contact" className="bg-green-700 text-lg font-semibold py-2 px-8 rounded-xl mx-3 hover:scale-110 mb-3">
+								<Link
+									to="/contact"
+									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl"
+								>
 									Contacto
 								</Link>
 							</div>

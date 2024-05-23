@@ -14,7 +14,7 @@ function Contact() {
 						<br />
 						Fácil y sencillo.
 					</h1>
-					<div className="md:flex justify-center items-center mt-10">
+					<div className="md:flex justify-center items-center mt-10 pb-20">
 						<div className="md:border-r-2 md:mr-10 md:pr-10 mb-10 md:mb-0">
 							<form>
 								<div className="md:flex mt-5">
@@ -47,13 +47,16 @@ function Contact() {
 									/>
 								</div>
 								<div className="flex justify-center items-center">
-									<button type="submit" className="bg-green-700 font-semibold py-3 px-10 rounded-xl">
+									<button
+										type="submit"
+										className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
+									>
 										Enviar mensaje
 									</button>
 								</div>
 							</form>
 						</div>
-						<div className="flex justify-center items-center pb-12 md:pb-20">
+						<div className="flex justify-center items-center">
 							<div>
 								<h3 className="text-2xl">Información de contacto</h3>
 								<p className="opacity-50">Estamos abiertos a cualquier sugerencia.</p>

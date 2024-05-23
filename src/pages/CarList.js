@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import data from "../json/car.json";
 import "../index.css";
 import Navbar from "../components/Navbar";
@@ -5,6 +6,16 @@ import Footer from "../components/Footer";
 import { UserRound, DoorClosed, Cog } from "lucide-react";
 
 const CarList = () => {
+	const [filter, setFilter] = useState(""); // Estado para el filtro seleccionado
+
+	// Función para manejar el cambio del filtro
+	const handleFilterChange = (tipo) => {
+		setFilter(tipo);
+	};
+
+	// Filtrar los coches basados en el filtro seleccionado
+	const filteredCars = data.filter((coche) => filter === "" || coche.tipo === filter);
+
 	return (
 		<div>
 			<Navbar />
@@ -15,8 +26,46 @@ const CarList = () => {
 							¿Qué vehículo quieres conducir?
 						</p>
 					</div>
+					<div className="flex flex-wrap justify-center mb-5 mt-2">
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("")}
+						>
+							Todos
+						</button>
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("SUV")}
+						>
+							SUV
+						</button>
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("Sedan")}
+						>
+							Sedan
+						</button>
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("Familiar")}
+						>
+							Familiar
+						</button>
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("Lujo")}
+						>
+							Lujo
+						</button>
+						<button
+							className="bg-gradient-to-br from-blue-gray-300 to-blue-gray-600 m-2 p-3 font-semibold rounded-xl"
+							onClick={() => handleFilterChange("Urbano")}
+						>
+							Urbano
+						</button>
+					</div>
 					<div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mx-5 md:mx-24 xl:mx-30 2xl:mx-36 mt-7">
-						{data.map((coche, index) => (
+						{filteredCars.map((coche, index) => (
 							<div className="bg-gradient-to-br col-span-1 from-blue-gray-900 to-blue-gray-300 rounded-xl flex flex-col" key={index}>
 								<div>
 									<p className="ml-4 mt-4 text-lg">
@@ -38,7 +87,7 @@ const CarList = () => {
 									</div>
 								</div>
 								<div className="flex justify-center mt-3">
-									<img src={coche.img} alt={coche.modelo} />
+									<img className="hover:scale-105 p-5" src={coche.img} alt={coche.modelo} />
 								</div>
 								<div className="mt-auto">
 									<p className="ml-4 mb-4">
