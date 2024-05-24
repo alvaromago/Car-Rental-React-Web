@@ -25,7 +25,7 @@ function Home() {
 	return (
 		<div>
 			<Navbar />
-			<div className="text-center bg-bg">
+			<div className="text-center bg-bg pb-5">
 				<div>
 					<h1 className="text-transparent bg-clip-text pt-5 lg:pt-16 pb-8 font-extrabold text-5xl lg:text-8xl bg-gradient-to-r from-green-500 to-purple-300">
 						Tu viaje comienza aquí
@@ -111,11 +111,11 @@ function Home() {
 					</div>
 					<div>
 						<p className="text-2xl mt-5 mb-5">Todos los coches a tu alcance</p>
-						<p className="flex opacity-70 mb-3">
+						<p className="flex opacity-70 mb-3 justify-center">
 							<ArrowRight className="mr-2" />
 							Desde 33€ al día
 						</p>
-						<p className="flex opacity-70">
+						<p className="flex opacity-70 justify-center">
 							<ArrowRight className="mr-2" />
 							<span className="mr-2">Al menos</span>
 							<Star />
@@ -132,12 +132,14 @@ function Home() {
 							<br />
 							tu búsqueda más rápida y eficaz.
 						</p>
-						<Link
-							to="/carlist"
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
-						>
-							Lista completa
-						</Link>
+						<div className="flex justify-center">
+							<Link
+								to="/carlist"
+								className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
+							>
+								Lista completa
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>

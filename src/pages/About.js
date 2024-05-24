@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import bgAU from "../assets/bgAU.jpg";
+import bgAU2 from "../assets/bgAU2.jpg";
+import bgAU3 from "../assets/bgAU3.png";
 
 function About() {
 	return (
@@ -13,11 +15,13 @@ function About() {
 					<p className="text-center text-transparent pt-5 lg:pt-16 bg-clip-text font-extrabold text-5xl lg:text-7xl bg-gradient-to-r from-green-500 to-purple-300">
 						Sobre Nosotros
 					</p>
-					<div className="md:flex justify-around py-10 px-10">
-						<div className="md:w-5/12 mb-5 md:mb-0">
-							<img src={bgAU} alt="Luces frontales de un coche en la oscuridad" />
+					<div className="lg:flex justify-around py-10 px-10 md:px-32 lg:px-10">
+						<div className="lg:w-5/12 mb-5 lg:mb-0">
+							<img src={bgAU} alt="Coches de renting" />
+							<img src={bgAU2} className="hidden lg:flex 2xl:hidden mt-16" alt="Intercambio de llaves" />
+							<img src={bgAU3} className="hidden lg:flex xl:hidden mt-16" alt="Coches de renting" />
 						</div>
-						<div className="md:w-5/12 text-justify text-xl">
+						<div className="lg:w-5/12 text-justify text-xl">
 							<p className="opacity-70">
 								Nuestra empresa nació de la pasión por ofrecer soluciones de movilidad flexibles y convenientes. Tenemos como misión
 								proporcionar a nuestros clientes una experiencia de renting de coches excepcional, ofreciendo vehículos de calidad y
