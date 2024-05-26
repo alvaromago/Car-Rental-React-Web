@@ -73,7 +73,7 @@ const CarList = () => {
 								key={index}
 								className="bg-gradient-to-br col-span-1 from-blue-gray-900 to-blue-gray-300 rounded-xl flex flex-col"
 							>
-								<div>
+								<div className="flex flex-col h-full justify-between">
 									<div>
 										<p className="ml-4 mt-4 text-lg">
 											{coche.marca} {coche.modelo}
