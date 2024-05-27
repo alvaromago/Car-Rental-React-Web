@@ -1,26 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import data from "../json/car.json";
-import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { UserRound, DoorClosed, Cog } from "lucide-react";
+import { UserRound, Cog, DoorClosed } from "lucide-react";
 
 const CarList = () => {
-	const [filter, setFilter] = useState(""); // Estado para el filtro seleccionado
+	const location = useLocation();
+	const queryParams = new URLSearchParams(location.search);
+	const searchQuery = queryParams.get("search") || "";
 
-	// Función para manejar el cambio del filtro
-	const handleFilterChange = (tipo) => {
-		setFilter(tipo);
-	};
+	const [cars, setCars] = useState(data);
+	const [filteredCars, setFilteredCars] = useState(cars);
 
-	// Filtrar los coches basados en el filtro seleccionado
-	const filteredCars = data.filter((coche) => filter === "" || coche.tipo === filter);
+	useEffect(() => {
+		if (searchQuery) {
+			const lowercasedQuery = searchQuery.toLowerCase();
+			setFilteredCars(
+				cars.filter((car) => car.marca.toLowerCase().includes(lowercasedQuery) || car.modelo.toLowerCase().includes(lowercasedQuery))
+			);
+		} else {
+			setFilteredCars(cars);
+		}
+	}, [searchQuery, cars]);
 
 	return (
 		<div>
 			<Navbar />
-			<div className="bg-bg">
+			<div className="bg-bg pb-10">
 				<div className="p-5">
 					<div>
 						<p className="text-center text-transparent bg-clip-text pb-5 font-extrabold text-3xl lg:text-6xl bg-gradient-to-r from-green-500 to-purple-300">
@@ -31,37 +39,37 @@ const CarList = () => {
 						<p className="flex items-center text-lg mr-5">Filtros:</p>
 						<button
 							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("")}
+							onClick={() => setFilteredCars(cars)}
 						>
 							Todos
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-br from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("SUV")}
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "SUV"))}
 						>
 							SUV
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-br from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("Sedan")}
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Sedan"))}
 						>
 							Sedan
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-br from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("Familiar")}
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Familiar"))}
 						>
 							Familiar
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-br from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("Lujo")}
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Lujo"))}
 						>
 							Lujo
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-br from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
-							onClick={() => handleFilterChange("Urbano")}
+							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Urbano"))}
 						>
 							Urbano
 						</button>

@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Search, Star, StarHalf, ArrowRight } from "lucide-react";
 import { Carousel } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import TeslaCaru from "../assets/tesla-model-x-plaid-grey.jpg";
 import BMWCaru from "../assets/bmw-serie-4-coupe.jpg";
 import MercedesCaru from "../assets/mercedes-gle-coupe.jpg";
@@ -22,6 +23,18 @@ import Peugeot from "../assets/peugeot.png";
 import VW from "../assets/vw.png";
 
 function Home() {
+	const [searchTerm, setSearchTerm] = useState("");
+	const navigate = useNavigate();
+
+	const handleSearchChange = (event) => {
+		setSearchTerm(event.target.value);
+	};
+
+	const handleSearchSubmit = (event) => {
+		event.preventDefault();
+		navigate(`/carlist?search=${searchTerm}`);
+	};
+
 	return (
 		<div>
 			<Navbar />
@@ -43,7 +56,7 @@ function Home() {
 						</p>
 					</div>
 					<div className="mx-auto rounded-md container">
-						<form>
+						<form onSubmit={handleSearchSubmit}>
 							<div className="py-3 lg:px-32">
 								<div className="mx-5 justify-center">
 									<div className="bg-white flex p-1 border-4 rounded-md border-purple-400">
@@ -56,6 +69,8 @@ function Home() {
 												className="bg-white text-black text-lg w-72 pl-1 md:w-96"
 												placeholder="Introduce el nombre del coche a buscar"
 												required
+												value={searchTerm}
+												onChange={handleSearchChange}
 											/>
 										</div>
 									</div>
