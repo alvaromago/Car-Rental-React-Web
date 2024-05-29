@@ -8,6 +8,10 @@ import "../index.css";
 import { UserRound, Cog, DoorClosed } from "lucide-react";
 
 const CarList = () => {
+	useEffect(() => {
+		document.title = "Lista de coches";
+	}, []);
+
 	const location = useLocation();
 	const queryParams = new URLSearchParams(location.search);
 	const searchQuery = queryParams.get("search") || "";

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { Search, Star, StarHalf, ArrowRight } from "lucide-react";
 import { Carousel } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TeslaCaru from "../assets/tesla-model-x-plaid-grey.jpg";
 import BMWCaru from "../assets/bmw-serie-4-coupe.jpg";
 import MercedesCaru from "../assets/mercedes-gle-coupe.jpg";
@@ -23,6 +23,10 @@ import Peugeot from "../assets/peugeot.png";
 import VW from "../assets/vw.png";
 
 function Home() {
+	useEffect(() => {
+		document.title = "CarRentalHub";
+	}, []);
+
 	const [searchTerm, setSearchTerm] = useState("");
 	const navigate = useNavigate();
 

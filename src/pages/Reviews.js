@@ -1,9 +1,14 @@
 import "../index.css";
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { CircleUserRound, Star } from "lucide-react";
 
 function Reviews() {
+	useEffect(() => {
+		document.title = "Valoraciones";
+	}, []);
+
 	return (
 		<div>
 			<Navbar />

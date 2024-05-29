@@ -1,10 +1,15 @@
 import "../index.css";
 import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import data from "../json/car.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const Car = () => {
+	useEffect(() => {
+		document.title = "Coches";
+	}, []);
+
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const coche = data.find((car) => car.id === parseInt(id));

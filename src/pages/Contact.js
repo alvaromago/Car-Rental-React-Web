@@ -1,9 +1,14 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 import { Phone, Send, Earth } from "lucide-react";
 
 function Contact() {
+	useEffect(() => {
+		document.title = "Contacto";
+	}, []);
+
 	return (
 		<div>
 			<Navbar />

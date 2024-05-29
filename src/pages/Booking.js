@@ -1,9 +1,14 @@
 import "../index.css";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const Booking = () => {
+	useEffect(() => {
+		document.title = "Reserva";
+	}, []);
+
 	const location = useLocation();
 	const { coche } = location.state || {};
 

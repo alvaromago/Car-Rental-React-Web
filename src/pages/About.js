@@ -1,12 +1,17 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import bgAU from "../assets/bgAU.jpg";
 import bgAU2 from "../assets/bgAU2.jpg";
 import bgAU3 from "../assets/bgAU3.png";
 
 function About() {
+	useEffect(() => {
+		document.title = "Sobre nosotros";
+	}, []);
+
 	return (
 		<div>
 			<Navbar />
