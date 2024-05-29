@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import data from "../json/car.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "../index.css";
 import { UserRound, Cog, DoorClosed } from "lucide-react";
 
 const CarList = () => {

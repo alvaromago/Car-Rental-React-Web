@@ -1,17 +1,21 @@
 import "../index.css";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import data from "../json/car.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const Car = () => {
 	const { id } = useParams();
+	const navigate = useNavigate();
 	const coche = data.find((car) => car.id === parseInt(id));
 
 	if (!coche) {
 		return <div>Coche no encontrado</div>;
 	}
+
+	const handleReserve = () => {
+		navigate(`/booking`, { state: { coche } });
+	};
 
 	return (
 		<div>
@@ -49,12 +53,12 @@ const Car = () => {
 							<span className="ml-3 text-sm opacity-75">Una semana: {(coche.precio * 7).toFixed(2)} € total</span>
 						</p>
 						<div className="flex justify-center">
-							<Link
-								to="/contact"
+							<button
+								onClick={handleReserve}
 								className="transition duration-300 max-w-max delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
 							>
 								Reservar
-							</Link>
+							</button>
 						</div>
 					</div>
 				</div>

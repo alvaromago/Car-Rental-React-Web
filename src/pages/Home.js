@@ -45,7 +45,7 @@ function Home() {
 					</h1>
 					<div className="pb-10 mx-5 lg:mx-60 text-balance">
 						<p className="text-slate-50/70 text-xl">
-							En <span className="text-purple-400 text-2xl">CarRentalHub</span> nos dedicamos a hacer que tu experiencia de alquiler de
+							En <span className="text-purple-300 text-2xl">CarRentalHub</span> nos dedicamos a hacer que tu experiencia de alquiler de
 							coches sea rápida, fácil y sin complicaciones. Tarifas transparentes, atención al cliente excepcional y una variedad de
 							servicios adicionales.
 							<br />

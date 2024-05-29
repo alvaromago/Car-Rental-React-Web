@@ -5,6 +5,7 @@ import CarList from "./pages/CarList";
 import Car from "./pages/Car";
 import Contact from "./pages/Contact";
 import Reviews from "./pages/Reviews";
+import Booking from "./pages/Booking";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/reviews" element={<Reviews />} />
 				<Route path="/car/:id" element={<Car />} />
+				<Route path="/booking" element={<Booking />} />
 			</Routes>
 		</Router>
 	);

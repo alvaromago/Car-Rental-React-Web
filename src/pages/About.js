@@ -12,7 +12,7 @@ function About() {
 			<Navbar />
 			<div>
 				<div className="bg-bg">
-					<p className="text-center text-transparent pt-5 lg:pt-16 bg-clip-text font-extrabold text-5xl lg:text-7xl bg-gradient-to-r from-green-500 to-purple-300">
+					<p className="text-center text-transparent pt-5 lg:pt-10 bg-clip-text font-extrabold text-5xl lg:text-7xl bg-gradient-to-r from-green-500 to-purple-300">
 						Sobre Nosotros
 					</p>
 					<div className="lg:flex justify-around py-10 px-10 md:px-32 lg:px-10">
