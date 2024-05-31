@@ -139,6 +139,74 @@ function Reviews() {
 									Definitivamente usaré este servicio nuevamente en el futuro con gusto.
 								</p>
 							</div>
+							<div className="bg-white/30 rounded-xl p-3">
+								<div className="flex justify-between">
+									<div className="flex items-center mb-1">
+										<div className="flex items-center opacity-80 md:mr-5">
+											<CircleUserRound />
+											<p className="text-left ml-2 text-lg">Yuria</p>
+										</div>
+										<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
+									</div>
+									<div className="flex">
+										<p className="text-right mr-2">4</p>
+										<Star />
+										<Star />
+										<Star />
+										<Star />
+									</div>
+								</div>
+								<p className="mr-20 md:mr-32">
+									El servicio fue impecable desde el principio hasta el final. Reservar fue sencillo y el personal fue
+									extremadamente amable y profesional. El coche estaba en perfecto estado y fue un placer conducirlo.
+									Definitivamente recomendaré este servicio a mis amigos y familiares.
+								</p>
+							</div>
+							<div className="bg-white/30 rounded-xl p-3">
+								<div className="flex justify-between">
+									<div className="flex items-center mb-1">
+										<div className="flex items-center opacity-80 md:mr-5">
+											<CircleUserRound />
+											<p className="text-left ml-2 text-lg">Logan</p>
+										</div>
+										<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
+									</div>
+									<div className="flex">
+										<p className="text-right mr-2">5</p>
+										<Star />
+										<Star />
+										<Star />
+										<Star />
+										<Star />
+									</div>
+								</div>
+								<p className="mr-20 md:mr-32">
+									Mi experiencia fue muy buena. El proceso de reserva y recogida del coche fue eficiente y sin problemas. El coche
+									estaba en buen estado y limpio. El personal fue muy atento y servicial. Solo le doy 4 estrellas porque el precio
+									podría ser un poco más competitivo, pero en general, lo recomiendo.
+								</p>
+							</div>
+							<div className="bg-white/30 rounded-xl p-3">
+								<div className="flex justify-between">
+									<div className="flex items-center mb-1">
+										<div className="flex items-center opacity-80 md:mr-5">
+											<CircleUserRound />
+											<p className="text-left ml-2 text-lg">Leonhard</p>
+										</div>
+										<p className=" bg-red-400 p-1 rounded-lg hidden md:flex text-xs">No Recomendado</p>
+									</div>
+									<div className="flex">
+										<p className="text-right mr-2">2</p>
+										<Star />
+										<Star />
+									</div>
+								</div>
+								<p className="mr-20 md:mr-32">
+									El servicio fue en general aceptable. La reserva fue fácil y el coche estaba en buen estado, aunque no impecable.
+									El proceso de devolución fue un poco más largo de lo esperado, pero el personal fue cortés y servicial. Es una
+									opción decente por el precio.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

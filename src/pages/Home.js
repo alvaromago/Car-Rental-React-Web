@@ -1,7 +1,7 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Search, Star, StarHalf, ArrowRight } from "lucide-react";
+import { Search, Star, StarHalf, ArrowRight, CircleUserRound } from "lucide-react";
 import { Carousel } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -160,6 +160,94 @@ function Home() {
 							</Link>
 						</div>
 					</div>
+				</div>
+				<p className="text-3xl px-5 py-3 underline decoration-purple-600">Echa un vistazo a las opiniones de nuestros clientes</p>
+				<div className="py-5 px-7 lg:px-28 xl:flex justify-center xl:max-w-screen-xl gap-5 mx-auto">
+					<Link to="/reviews">
+						<div className="bg-white/30 rounded-xl p-3 h-auto mb-3">
+							<div className="flex justify-between">
+								<div className="flex items-center mb-1 mr-2">
+									<div className="flex items-center md:mr-3">
+										<CircleUserRound className="opacity-80" />
+										<p className="text-left ml-2 text-lg opacity-95">Soler</p>
+									</div>
+									<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
+								</div>
+								<div className="flex">
+									<p className="text-right mr-2">4</p>
+									<Star />
+									<Star />
+									<Star />
+									<Star />
+								</div>
+							</div>
+							<p className="mr-20 md:mr-26 text-left">
+								Estoy muy satisfecho con el servicio. El personal fue amable y servicial, y el proceso de recogida y devolución del
+								vehículo fue muy eficiente. El coche estaba en excelente estado y cumplió con mis expectativas. Recomiendo este
+								servicio.
+							</p>
+						</div>
+					</Link>
+					<Link to="/reviews">
+						<div className="bg-white/30 rounded-xl p-3 h-auto mb-3">
+							<div className="flex justify-between">
+								<div className="flex items-center mb-1 mr-2">
+									<div className="flex items-center opacity-80 md:mr-3">
+										<CircleUserRound />
+										<p className="text-left ml-2 text-lg">Lothric</p>
+									</div>
+									<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
+								</div>
+								<div className="flex">
+									<p className="text-right mr-2">5</p>
+									<Star />
+									<Star />
+									<Star />
+									<Star />
+									<Star />
+								</div>
+							</div>
+							<p className="mr-20 md:mr-26 text-left">
+								No puedo estar más contento con el servicio. La reserva fue fácil, el proceso de recogida fue rápido y el coche superó
+								mis expectativas. Además, el personal fue extremadamente servicial y atento a todas mis necesidades. Definitivamente
+								usaré este servicio nuevamente en el futuro con gusto.
+							</p>
+						</div>
+					</Link>
+					<Link to="/reviews">
+						<div className="bg-white/30 rounded-xl p-3 h-auto">
+							<div className="flex justify-between">
+								<div className="flex items-center mb-1 mr-2">
+									<div className="flex items-center opacity-80 md:mr-3">
+										<CircleUserRound />
+										<p className="text-left ml-2 text-lg">Malenia</p>
+									</div>
+									<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
+								</div>
+								<div className="flex">
+									<p className="text-right mr-2">5</p>
+									<Star />
+									<Star />
+									<Star />
+									<Star />
+									<Star />
+								</div>
+							</div>
+							<p className="mr-20 md:mr-26 text-left">
+								¡Increíble experiencia! Desde el momento en que realicé la reserva hasta la devolución del vehículo, todo fue
+								perfecto. El coche estaba limpio y en excelentes condiciones, y el personal fue muy profesional y amigable. Recomiendo
+								encarecidamente este servicio sin dudarlo.
+							</p>
+						</div>
+					</Link>
+				</div>
+				<div className="flex justify-center mb-5">
+					<Link
+						to="/reviews"
+						className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
+					>
+						Ver el resto de opiniones
+					</Link>
 				</div>
 			</div>
 			<Footer />
