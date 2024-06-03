@@ -8,6 +8,7 @@
         "puertas":5,
         "precio":92.4,
         "tipo":"SUV",
+        "info":"https://www.mercedes-benz.es/passengercars/models/suv/gle-coupe/overview.html",
         "img":"https://i.imgur.com/aEkhbTQ.png"
     },
     {
@@ -19,6 +20,7 @@
         "puertas":5,
         "precio":85.8,
         "tipo":"Familiar",
+        "info":"https://www.mercedes-benz.es/passengercars/models/estate/c-class/overview.html",
         "img":"https://i.imgur.com/Dzw49Iv.png"
     },
     {
@@ -30,6 +32,7 @@
         "puertas":5,
         "precio":124.1,
         "tipo":"Lujo",
+        "info":"https://www.mercedes-benz.es/passengercars/models/saloon/c-class/overview.html",
         "img":"https://i.imgur.com/IBOZY3B.png"
     },
     {
@@ -41,6 +44,7 @@
         "puertas":5,
         "precio":72.5,
         "tipo":"Coupe",
+        "info":"https://www.tesla.com/es_es/model3-choose",
         "img":"https://i.imgur.com/PNmNOSz.png"
     },
     {
@@ -52,6 +56,7 @@
         "puertas":5,
         "precio":78.5,
         "tipo":"Sedan",
+        "info":"https://www.tesla.com/es_es/models",
         "img":"https://i.imgur.com/pcHxLFb.png"
     },
     {
@@ -63,6 +68,7 @@
         "puertas":5,
         "precio":88.2,
         "tipo":"SUV",
+        "info":"https://www.tesla.com/es_es/modelx",
         "img":"https://i.imgur.com/qVW0EeJ.png"
     },
     {
@@ -74,6 +80,7 @@
         "puertas":5,
         "precio":50.6,
         "tipo":"SUV",
+        "info":"https://www.peugeot.es/gama/nuevo-peugeot-e-2008.html",
         "img":"https://i.imgur.com/t8fq3cj.png"
     },
     {
@@ -85,6 +92,7 @@
         "puertas":5,
         "precio":45.9,
         "tipo":"Urbano",
+        "info":"https://www.peugeot.es/gama/nuevo-peugeot-e-208.html",
         "img":"https://i.imgur.com/XCdsfM3.png"
     },
     {
@@ -96,6 +104,7 @@
         "puertas":5,
         "precio":51.2,
         "tipo":"Sedan",
+        "info":"https://www.peugeot.es/gama/peugeot-508-hybrid.html",
         "img":"https://i.imgur.com/qZpFglF.png"
     },
     {
@@ -107,6 +116,7 @@
         "puertas":5,
         "precio":47.6,
         "tipo":"Urbano",
+        "info":"https://www.volkswagen.es/es/modelos/polo.html",
         "img":"https://i.imgur.com/0ExU00f.png"
     },
     {
@@ -118,6 +128,7 @@
         "puertas":5,
         "precio":48.3,
         "tipo":"SUV",
+        "info":"https://www.volkswagen.es/es/modelos/taigo.html",
         "img":"https://i.imgur.com/IGkSqab.png"
     },
     {
@@ -129,6 +140,7 @@
         "puertas":5,
         "precio":51.8,
         "tipo":"SUV",
+        "info":"https://www.volkswagen.es/es/modelos/tiguan-runout.html",
         "img":"https://i.imgur.com/159Itls.png"
     },
     {
@@ -140,6 +152,7 @@
         "puertas":5,
         "precio":44.1,
         "tipo":"SUV",
+        "info":"https://www.skoda.es/modelos/kamiq/kamiq",
         "img":"https://i.imgur.com/p4O2FVa.png"
     },
     {
@@ -151,6 +164,7 @@
         "puertas":5,
         "precio":45.7,
         "tipo":"Sedan",
+        "info":"https://www.skoda.es/modelos/octavia/new-octavia",
         "img":"https://i.imgur.com/EkoEN7j.png"
     },
     {
@@ -162,6 +176,7 @@
         "puertas":5,
         "precio":47.5,
         "tipo":"Familiar",
+        "info":"https://www.skoda.es/modelos/superb-combi/superb-combi",
         "img":"https://i.imgur.com/Bi0k9dJ.png"
     },
     {
@@ -173,6 +188,7 @@
         "puertas":5,
         "precio":90.9,
         "tipo":"Familiar",
+        "info":"https://www.bmw.es/es/coches-bmw/serie-3/bmw-serie3-touring/caracteristicas.html",
         "img":"https://i.imgur.com/hV79rYg.png"
     },
     {
@@ -184,6 +200,7 @@
         "puertas":5,
         "precio":144,
         "tipo":"Lujo",
+        "info":"https://www.bmw.es/es/coches-bmw/serie-4/coupe/caracteristicas.html",
         "img":"https://i.imgur.com/qU7QG1G.png"
     },
     {
@@ -195,6 +212,7 @@
         "puertas":5,
         "precio":89.3,
         "tipo":"SUV",
+        "info":"https://www.bmw.es/es/coches-bmw/m/x3-m/2021/caracteristicas.html",
         "img":"https://i.imgur.com/8NwX2gk.png"
     },
     {
@@ -206,6 +224,7 @@
         "puertas":5,
         "precio":74.8,
         "tipo":"Urbano",
+        "info":"https://www.audi.es/es/web/es/modelos/a1/a1-sportback.html",
         "img":"https://i.imgur.com/TmflcJa.png"
     },
     {
@@ -217,6 +236,7 @@
         "puertas":5,
         "precio":88,
         "tipo":"Sedan",
+        "info":"https://www.audi.es/es/web/es/modelos/a4/a4.html",
         "img":"https://i.imgur.com/ORFrxij.png"
     },
     {
@@ -228,6 +248,7 @@
         "puertas":5,
         "precio":143.2,
         "tipo":"Lujo",
+        "info":"https://www.audi.es/es/web/es/modelos/a7/a7-sportback.html",
         "img":"https://i.imgur.com/8jJMRRa.png"
     },
     {
@@ -239,6 +260,7 @@
         "puertas":5,
         "precio":36.9,
         "tipo":"Urbano",
+        "info":"https://www.opel.es/coches/gama-corsa/nuevo-corsa/resumen.html",
         "img":"https://i.imgur.com/9uEcmR6.png"
     },
     {
@@ -250,6 +272,7 @@
         "puertas":5,
         "precio":49,
         "tipo":"SUV",
+        "info":"https://www.opel.es/coches/gama-mokka/mokka/resumen.html",
         "img":"https://i.imgur.com/FuKrnJm.png"
     },
     {
@@ -261,6 +284,7 @@
         "puertas":5,
         "precio":37.7,
         "tipo":"Coupe",
+        "info":"https://www.opel.es/coches/gama-astra/astra/5-puertas/resumen.html",
         "img":"https://i.imgur.com/GdyuU68.png"
     },
     {
@@ -272,6 +296,7 @@
         "puertas":5,
         "precio":34.6,
         "tipo":"Urbano",
+        "info":"https://www.seat.es/coches/leon-5-puertas/modelo",
         "img":"https://i.imgur.com/lsqZh5d.png"
     },
     {
@@ -283,6 +308,7 @@
         "puertas":5,
         "precio":45,
         "tipo":"SUV",
+        "info":"https://www.seat.es/coches/tarraco/modelo",
         "img":"https://i.imgur.com/0hQCs2H.png"
     },
     {
@@ -294,6 +320,7 @@
         "puertas":5,
         "precio":36.4,
         "tipo":"SUV",
+        "info":"https://www.seat.es/coches/arona/modelo",
         "img":"https://i.imgur.com/2HKLo8C.png"
     },
     {
@@ -305,6 +332,7 @@
         "puertas":5,
         "precio":31.8,
         "tipo":"Urbano",
+        "info":"https://www.toyota.es/coches/yaris",
         "img":"https://i.imgur.com/m84ASFU.png"
     },
     {
@@ -316,6 +344,7 @@
         "puertas":5,
         "precio":43.9,
         "tipo":"Familiar",
+        "info":"https://www.toyota.es/coches/corolla-touring-sports",
         "img":"https://i.imgur.com/eEx0OTy.png"
     },
     {
@@ -327,6 +356,7 @@
         "puertas":5,
         "precio":39,
         "tipo":"Sedan",
+        "info":"https://www.toyota.es/coches/corolla-sedan",
         "img":"https://i.imgur.com/AiBSljp.png"
     }
 ]

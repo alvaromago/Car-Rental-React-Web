@@ -1,5 +1,5 @@
 import "../index.css";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
 import data from "../json/car.json";
 import Navbar from "../components/Navbar";
@@ -35,7 +35,7 @@ const Car = () => {
 							<img src={coche.img} alt={coche.modelo} className="w-full h-auto mb-2" />
 						</div>
 					</div>
-					<div className="grid place-content-center ml-10 gap-y-5 text-2xl">
+					<div className="grid place-content-center md:ml-10 gap-y-5 text-2xl">
 						<p>
 							<strong>Asientos:</strong>
 							<span className="ml-2">{coche.asientos}</span>
@@ -66,6 +66,19 @@ const Car = () => {
 							</button>
 						</div>
 					</div>
+				</div>
+				<div className="grid place-items-center mt-10 text-xl p-5 gap-y-5">
+					<p className="text-center lg:text-start">
+						Para obtener más información sobre el coche, puedes hacer click en el botón inferior, donde se detallan las características
+						más a fondo por su propio fabricante.
+					</p>
+					<Link
+						to={coche.info}
+						target="_blank"
+						className="transition duration-300 max-w-max delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
+					>
+						Más información
+					</Link>
 				</div>
 			</div>
 			<Footer />
