@@ -54,7 +54,7 @@ function Contact() {
 								<div className="flex justify-center items-center">
 									<button
 										type="submit"
-										className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
+										className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
 									>
 										Enviar mensaje
 									</button>

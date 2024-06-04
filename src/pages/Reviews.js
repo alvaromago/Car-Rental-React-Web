@@ -2,7 +2,8 @@ import "../index.css";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { CircleUserRound, Star } from "lucide-react";
+import { CircleUserRound } from "lucide-react";
+import { FaStar } from "react-icons/fa";
 
 function Reviews() {
 	useEffect(() => {
@@ -16,7 +17,6 @@ function Reviews() {
 				<div className="px-7 md:px-20 2xl:px-72 px py-8">
 					<div className="p-3 md:p-6 rounded-xl">
 						<div className="text-center mb-10">
-							<p className="text-sm opacity-75">Revisa las valoraciones</p>
 							<p className="text-transparent bg-clip-text pb-5 font-extrabold text-6xl lg:text-8xl bg-gradient-to-r from-green-500 to-purple-300">
 								¿Qué dicen nuestros clientes?
 							</p>
@@ -35,11 +35,11 @@ function Reviews() {
 										</div>
 										<p className=" bg-green-500 p-1 rounded-lg hidden md:flex text-xs">Recomendado</p>
 									</div>
-									<div className="flex">
+									<div className="flex items-center">
 										<p className="text-right mr-2">3</p>
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -59,10 +59,10 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">4</p>
-										<Star />
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -82,7 +82,7 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">1</p>
-										<Star />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -102,11 +102,11 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">5</p>
-										<Star />
-										<Star />
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -126,11 +126,11 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">5</p>
-										<Star />
-										<Star />
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -150,10 +150,10 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">4</p>
-										<Star />
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -173,11 +173,11 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">5</p>
-										<Star />
-										<Star />
-										<Star />
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">
@@ -197,8 +197,8 @@ function Reviews() {
 									</div>
 									<div className="flex">
 										<p className="text-right mr-2">2</p>
-										<Star />
-										<Star />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
 									</div>
 								</div>
 								<p className="mr-20 md:mr-32">

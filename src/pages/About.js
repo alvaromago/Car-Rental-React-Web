@@ -48,13 +48,13 @@ function About() {
 							<div className="flex justify-center items-center mt-5">
 								<Link
 									to="/reviews"
-									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl mr-5"
+									className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl mr-5"
 								>
 									Valoraciones
 								</Link>
 								<Link
 									to="/contact"
-									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl"
+									className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 my-2 px-6 rounded-xl"
 								>
 									Contacto
 								</Link>

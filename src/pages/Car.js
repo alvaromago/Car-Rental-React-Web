@@ -60,7 +60,7 @@ const Car = () => {
 						<div className="flex justify-center">
 							<button
 								onClick={handleReserve}
-								className="transition duration-300 max-w-max delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
+								className="transition duration-100 delay-250 max-w-max ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
 							>
 								Reservar
 							</button>
@@ -75,7 +75,7 @@ const Car = () => {
 					<Link
 						to={coche.info}
 						target="_blank"
-						className="transition duration-300 max-w-max delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
+						className="transition duration-100 delay-250 max-w-max ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-2 mt-5 px-6 rounded-xl"
 					>
 						Más información
 					</Link>

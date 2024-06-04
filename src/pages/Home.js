@@ -1,7 +1,9 @@
 import "../index.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Search, Star, StarHalf, ArrowRight, CircleUserRound } from "lucide-react";
+import { Search, ArrowRight, CircleUserRound } from "lucide-react";
+import { FaStar } from "react-icons/fa";
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { Carousel } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -83,7 +85,7 @@ function Home() {
 							<div className="py-3">
 								<button
 									type="submit"
-									className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
+									className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 my-2 px-6 rounded-xl"
 								>
 									Mostrar resultados
 								</button>
@@ -115,7 +117,7 @@ function Home() {
 				</div>
 				<div className="py-10 mx-3 md:mx-20 xl:mx-0 xl:flex justify-center">
 					<div className="lg:mx-12 xl:ml-0 xl:mr-15">
-						<Carousel className="rounded-xl w-fit xl:w-[750px] h-fit xl:h-[475px]" autoplay="true">
+						<Carousel className="rounded-xl w-fit xl:w-[750px] h-fit xl:h-[475px]" autoplay="true" loop="true">
 							<img src={TeslaCaru} alt="Tesla" className="h-full w-full object-cover" />
 							<img src={PeugeotCaru} alt="Tesla" className="h-full w-full object-cover" />
 							<img src={BMWCaru} alt="Tesla" className="h-full w-full object-cover" />
@@ -134,13 +136,13 @@ function Home() {
 							<ArrowRight className="mr-2" />
 							Desde 33€ al día
 						</p>
-						<p className="flex opacity-70 justify-center">
+						<p className="flex opacity-70 justify-center items-center">
 							<ArrowRight className="mr-2" />
 							<span className="mr-2">Al menos</span>
-							<Star />
-							<Star />
-							<Star />
-							<StarHalf />
+							<FaStar className="w-5 h-5" />
+							<FaStar className="w-5 h-5" />
+							<FaStar className="w-5 h-5" />
+							<FaRegStarHalfStroke className="w-5 h-5" />
 						</p>
 						<p className="mt-7 p-5 mb-8 text-xl opacity-75">
 							En nuestra página con el listado
@@ -154,7 +156,7 @@ function Home() {
 						<div className="flex justify-center">
 							<Link
 								to="/carlist"
-								className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
+								className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
 							>
 								Lista completa
 							</Link>
@@ -175,10 +177,10 @@ function Home() {
 								</div>
 								<div className="flex">
 									<p className="text-right mr-2">4</p>
-									<Star />
-									<Star />
-									<Star />
-									<Star />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
 								</div>
 							</div>
 							<p className="mr-20 md:mr-26 text-left">
@@ -200,11 +202,13 @@ function Home() {
 								</div>
 								<div className="flex">
 									<p className="text-right mr-2">5</p>
-									<Star />
-									<Star />
-									<Star />
-									<Star />
-									<Star />
+									<div className="flex">
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+										<FaStar className="w-5 h-5" />
+									</div>
 								</div>
 							</div>
 							<p className="mr-20 md:mr-26 text-left">
@@ -226,11 +230,11 @@ function Home() {
 								</div>
 								<div className="flex">
 									<p className="text-right mr-2">5</p>
-									<Star />
-									<Star />
-									<Star />
-									<Star />
-									<Star />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
+									<FaStar className="w-5 h-5" />
 								</div>
 							</div>
 							<p className="mr-20 md:mr-26 text-left">
@@ -244,7 +248,7 @@ function Home() {
 				<div className="flex justify-center mb-5">
 					<Link
 						to="/reviews"
-						className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
+						className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 hover:bg-green-700/80 hover:scale-105 bg-green-700 font-semibold py-3 px-6 rounded-xl"
 					>
 						Ver el resto de opiniones
 					</Link>

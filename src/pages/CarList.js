@@ -43,37 +43,37 @@ const CarList = () => {
 					<div className="flex flex-wrap justify-center mb-5 mt-2">
 						<p className="flex items-center text-lg mr-5">Filtros:</p>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars)}
 						>
 							Todos
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "SUV"))}
 						>
 							SUV
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Sedan"))}
 						>
 							Sedan
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Familiar"))}
 						>
 							Familiar
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Lujo"))}
 						>
 							Lujo
 						</button>
 						<button
-							className="transition duration-300 delay-150 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
+							className="transition duration-100 delay-250 ease-in-out hover:-translate-y-1 bg-gradient-to-b from-green-700 to-green-700/70 m-2 p-3 font-semibold rounded-xl shadow-lg shadow-deep-purple-700/80"
 							onClick={() => setFilteredCars(cars.filter((car) => car.tipo === "Urbano"))}
 						>
 							Urbano
