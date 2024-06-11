@@ -26,7 +26,7 @@ function About() {
 							<img src={bgAU2} className="hidden lg:flex 2xl:hidden mt-16" alt="Intercambio de llaves" />
 							<img src={bgAU3} className="hidden lg:flex xl:hidden mt-16" alt="Coches de renting" />
 						</div>
-						<div className="lg:w-5/12 text-justify text-xl">
+						<div className="lg:w-5/12 text-xl">
 							<p className="opacity-70">
 								Nuestra empresa nació de la pasión por ofrecer soluciones de movilidad flexibles y convenientes. Tenemos como misión
 								proporcionar a nuestros clientes una experiencia de renting de coches excepcional, ofreciendo vehículos de calidad y
